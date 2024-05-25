@@ -1,0 +1,74 @@
+.newcalloutChild,
+.newcalloutItem {
+  position: absolute;
+  border-radius: var(--br-181xl);
+}
+.newcalloutChild {
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #fff, #fff7f7);
+  width: 263px;
+  height: 118px;
+  mix-blend-mode: normal;
+}
+.newcalloutItem {
+  top: 37.5px;
+  left: 19.5px;
+  background-color: var(--color-mediumseagreen-200);
+  width: 46px;
+  height: 43px;
+}
+.vectorIcon,
+.youWillReceive {
+  position: absolute;
+  top: 49.5px;
+  left: 32px;
+  width: 19px;
+  height: 20px;
+}
+.youWillReceive {
+  top: 21.5px;
+  left: 73.5px;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  opacity: 0.8;
+}
+.newcallout {
+  width: 263px;
+  position: relative;
+  height: 118px;
+}
+.newcalloutWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-300);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 1200px) {
+  .newcalloutWrapper {
+    gap: var(--gap-31xl);
+  }
+}
+@media screen and (max-width: 960px) {
+  .newcalloutWrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 420px) {
+  .youWillReceive {
+    font-size: var(--font-size-xs);
+    line-height: 16px;
+  }
+  .newcalloutWrapper {
+    gap: var(--gap-3xs);
+  }
+}
